@@ -1,0 +1,28 @@
+{
+  "name": "guess-film",
+  "version": "1.0.0",
+  "description": "a html game that players guess the name of a film",
+  "main":"index.html",
+  "window":{
+		"toolbar":false,
+		"resizable":false,
+		"width":480,
+		"height":800
+	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mirror2Tina/guess-film.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "guess"
+  ],
+  "author": "mirror ywzq",
+  "license": "BSD-2-Clause",
+  "dependencies":{
+  	"jquery":"*",
+  	"requirejs":"*"
+  }
+}
