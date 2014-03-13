@@ -4,8 +4,8 @@
   "description": "a html game that players guess the name of a film",
   "main":"index.html",
   "window":{
-		"toolbar":false,
-		"resizable":false,
+		"toolbar":true,
+		"resizable":true,
 		"width":480,
 		"height":800
 	},

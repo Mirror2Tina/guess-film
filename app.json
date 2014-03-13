@@ -1,0 +1,11 @@
+{
+    "name": "guess-film",
+    "js": [
+    		"node_modules/jquery/dist/jquery.js"
+    ],
+
+    "css": [
+
+    ],
+    "id": "3a867610-670a-11e1-a90e-4318029d18bb"
+}
