@@ -1,0 +1,20 @@
+<h1>Game 1</h1>
+<div id="dialogue">
+dialogue
+</div>
+<div id="answer">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<div id="choice"></div>
+<script type="text/javascript">
+ var xhr= new XMLHttpRequest();
+ xhr.open('Get','../data/filmdata.json',false);
+ xhr.send(null);
+
+ var a =eval("("+xhr.responseText+")");
+</script>

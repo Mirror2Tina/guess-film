@@ -1,6 +1,6 @@
 /**
- *  Development
- * 
+ *  Launcher
+ *
  */
 (function() {
     var head = document.head;
@@ -18,7 +18,7 @@
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'app.json', false);
+    xhr.open('GET', 'core/app.json', false);
     xhr.send(null);
 
     var options = eval("(" + xhr.responseText + ")"),

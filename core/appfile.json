@@ -1,0 +1,25 @@
+{
+    "name": "guess-film",
+    "js": [
+    		//依赖库
+    		"node_modules/jquery/dist/jquery.js",
+    		"node_modules/underscore/underscore.js",
+
+    		//頁面
+    		//modules
+    		"modules/page/homePage/homepageT.js",
+
+
+
+
+            "core/app.js"
+
+
+
+    ],
+
+    "css": [
+           // "css/common.css"
+    ],
+    "id": "3a867610-670a-11e1-a90e-4318029d18bb"
+}
