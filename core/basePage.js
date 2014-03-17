@@ -4,13 +4,17 @@ define(function(require) {
 	function basePage () {
 	};
 
-    basePage.prototype.init = function() {
-
+    basePage.prototype.baseInit = function() {
+		console.log('baseinit')
     };
 
-    basePage.prototype.load = function() {
-
+    basePage.prototype.baseLoad = function() {
+        console.log('baseLoad');
     };
+
+    // basePage.prototype.render =function(){
+
+    // }
     return basePage;
 });
 })(

@@ -6,8 +6,12 @@ requirejs.config({
 		basePage:'core/basePage',
 		pageNavigator:'core/pageNavigator',
 
-		homepage:'modules/page/homePage/homepage',
-		homepageT:'modules/page/homePage/homepageT',
+		homePage:'modules/page/homePage/homePage',
+		homePageT:'modules/page/homePage/homePageT',
+		gamePage:'modules/page/gamePage/gamePage',
+		gamePageT:'modules/page/gamePage/gamePageT',
+
+		filmdata:'data/filmdata',
 
         app:'core/app'
 	}

@@ -3,17 +3,17 @@
  * @param  {[type]} define [description]
  * @return {[type]}        [description]
  */
-(function(define){
-    define(function(require){
-var pageNavigator =require('pageNavigator')
-homepage=require('homepage');
+(function(define) {
+	define(function(require) {
+		var pageNavigator = require('pageNavigator')
+		homePage = require('homePage');
 
 
-pageNavigator(homepage);
+		pageNavigator(new homePage());
 
-console.log("app");
+		console.log("app");
 
-})
-})(typeof define === 'function' && define.amd ? define:function  (factory) {
+	})
+})(typeof define === 'function' && define.amd ? define : function(factory) {
 	module.exports = factory(require);
 });
