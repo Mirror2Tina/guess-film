@@ -1,3 +1,9 @@
+/**
+ * 用来放游戏数据
+ * @param  {[type]} define  根据运行环境可能是amd模式下的define函数或者是为匹配cmd模式的一个函数
+ * @param  {[type]} require rquirejs提给的一个函数
+ * @return {[type]}         最终返回游戏数据，index是序号 con 是对话 tip是提示 words是备选文字 answer是正确答案 url是电影图片
+ */
 (function(define) {
 define(function(require) {
     return [
