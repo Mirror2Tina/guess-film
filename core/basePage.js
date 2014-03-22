@@ -1,11 +1,17 @@
 (function(define) {
 define(function(require) {
 
-	function basePage () {
-	};
+    var baseEvent=require('baseEvent');
+    function basePage() {
+        console.log("basePage constructor")
+    };
+
+    basePage.prototype = new baseEvent();
+
+    basePage.prototype.constructor = basePage;
 
     basePage.prototype.baseInit = function() {
-		console.log('baseinit')
+        console.log('baseinit')
     };
 
     basePage.prototype.baseLoad = function() {

@@ -8,7 +8,6 @@
 		var pageNavigator = require('pageNavigator')
 		homePage = require('homePage');
 
-
 		pageNavigator(new homePage());
 
 		console.log("app");

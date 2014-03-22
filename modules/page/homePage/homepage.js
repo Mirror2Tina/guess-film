@@ -21,10 +21,18 @@
 		homePage.prototype.load = function(argument) {
 			this.baseLoad();
 			window.document.body.appendChild(this.$homePage[0]);
+			this.bindEvent();
 			return this;
 		}
 
+        homePage.prototype.bindEvent =function  (argument) {
+        	this.on($(),navigateGamePage);
+        }
 
+        function  navigateGamePage	(argument) {
+
+        	console.log("enter gamePage");
+        }
 		return homePage;
 	});
 })(
