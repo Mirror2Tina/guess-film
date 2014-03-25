@@ -3,19 +3,19 @@ requirejs.config({
 		jquery:'node_modules/jquery/dist/jquery',
 		_:'node_modules/underscore/underscore',
 
-		baseEvent:'core/baseEvent',
-		basePage:'core/basePage',
-		baseUserControl:'core/baseUserControl',
-		pageNavigator:'core/pageNavigator',
+		baseEvent:'lib/core/baseEvent',
+		basePage:'lib/core/basePage',
+		baseUserControl:'lib/core/baseUserControl',
+		pageNavigator:'lib/core/pageNavigator',
 
-		homePage:'modules/page/homePage/homePage',
-		homePageT:'modules/page/homePage/homePageT',
-		gamePage:'modules/page/gamePage/gamePage',
-		gamePageT:'modules/page/gamePage/gamePageT',
+		homePage:'lib/page/homePage/homePage',
+		homePageT:'lib/page/homePage/homePageT',
+		gamePage:'lib/page/gamePage/gamePage',
+		gamePageT:'lib/page/gamePage/gamePageT',
 
-		filmdata:'data/filmdata',
+		filmdata:'lib/data/filmdata',
 
-        app:'core/app'
+        app:'lib/core/app'
 	}
 });
 
