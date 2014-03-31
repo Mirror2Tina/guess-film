@@ -28,4 +28,5 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 node_modules/*
 node-webkit/*
+build/*
 nw.exe - Shortcut.lnk
