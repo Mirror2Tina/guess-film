@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "a html game that players guess the name of a film",
   "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "resizable": true,
+    "width": 480,
+    "height": 800
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Mirror2Tina/guess-film.git"
@@ -22,6 +28,11 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-requirejs": "~0.4.1"
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-strip": "~0.2.1"
   }
 }
