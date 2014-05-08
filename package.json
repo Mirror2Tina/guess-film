@@ -3,9 +3,13 @@
   "description": "a html game that players guess the name of a film by Angular-Desktop-App Build System",
   "version": "1.1.0",
   "author": {
-    "name": "mirror ywzq",
-    "url": "https://github.com/Mirror2Tina/guess-film.git"
+    "name": "mirror",
+    "url": "https://github.com/Mirror2Tina"
   },
+  "contributors":[{
+        "name": "ywzq",
+        "url" : ""
+    }],
   "dependencies": {
     "requirejs": "~2.1.11"
   },

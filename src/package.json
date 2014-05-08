@@ -1,15 +1,15 @@
 {
-  "name": "angular-desktop-app",
-  "description": "Desktop application developed using AngularJS and web technologies. Powered by node-webkit",
-  "version": "1.2.0",
+  "name": "guess-film",
+  "description": "a html game that players guess the name of a film by Angular-Desktop-App Build System",
+  "version": "1.1.0",
   "main": "index.html",
   "author":{
-      "name": "Joel Grenon",
-      "url": "https://github.com/jgrenon"
+    "name": "mirror",
+    "url": "https://github.com/Mirror2Tina"
   },
   "contributors":[{
-        "name": "Tom Lawson",
-        "url" : "https://github.com/talss89"
+        "name": "ywzq",
+        "url" : ""
     }],
   "window": {
     "toolbar": true,
