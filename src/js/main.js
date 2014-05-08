@@ -43,7 +43,7 @@ requirejs.config({
     },
 
     deps: [
-        // kick start application... see bootstrap.js
-        './bootstrap'
+        //kick start application... see bootstrap.js
+       './bootstrap'
     ]
 });

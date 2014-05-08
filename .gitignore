@@ -29,6 +29,7 @@ _ReSharper*/
 node_modules/*
 node-webkit/*
 nw.exe - Shortcut.lnk
+node_modules
 /src/lib
 *.db
 data
