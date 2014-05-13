@@ -6,8 +6,8 @@ define([
     'require',
     'angular',
     //'angular-ui-router',
-    'app'
-], function (require, ng,app) {
+    'appGuessFilm'
+], function (require, ng,appGuessFilm) {
     'use strict';
 
     /*
@@ -15,8 +15,7 @@ define([
      * using the `run` function on the top-level module
      */
 
-    require(['domReady!'], function (document) {
-        console.log(ng,document,app)
-        ng.bootstrap(document, ['app']);
+    require(['domReady!'], function (document) {   
+        ng.bootstrap(document, ['appGuessFilm']);
     });
 });

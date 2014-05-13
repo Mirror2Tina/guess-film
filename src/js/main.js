@@ -9,12 +9,15 @@ requirejs.config({
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
         'angular-ui-router': '../lib/angular-ui-router/release/angular-ui-router',
+        'angular-route': '../lib/angular-route/angular-route',
         'handlebars': '../lib/handlebars/handlebars',
         'text': '../lib/requirejs-text/text',
         '_': '../lib/lodash/dist/lodash',
         '$': '../lib/jquery/jquery',
         'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
-        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls'
+        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls',
+        'appGuessFilm':'./app'
+
     },
 
     /**
@@ -26,6 +29,9 @@ requirejs.config({
             exports: 'angular'
         },
         'angular-ui-router':{
+            deps:['angular']
+        },
+        'angular-route':{
             deps:['angular']
         },
         'handlebars':{
