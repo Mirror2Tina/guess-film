@@ -21,6 +21,10 @@ define("appGuessFilm", [
                 templateUrl:'partials/levelMenu.html',
                 controller:''
             }).
+            when('/help',{
+                templateUrl:'partials/help.html',
+                controller:''
+            }).
             otherwise({
               redirectTo:'/home'
             });

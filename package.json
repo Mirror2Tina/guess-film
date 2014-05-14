@@ -6,6 +6,13 @@
     "name": "mirror",
     "url": "https://github.com/Mirror2Tina"
   },
+   "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "resizable": true,
+    "width": 480,
+    "height": 800
+  },
   "contributors":[{
         "name": "ywzq",
         "url" : ""
