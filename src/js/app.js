@@ -4,22 +4,27 @@
  */
 define("appGuessFilm", [
     'angular',
-    'angular-route'
+    'angular-route',
+     'controllers'
 ], function (ng,ngRoute) {
     'use strict';
 
-    return ng.module('appGuessFilm', ['ngRoute']).config(['$routeProvider',
+    return ng.module('appGuessFilm', ['ngRoute','gameControllers']).config(['$routeProvider',
         function  ($routeProvider) {
             $routeProvider.when('/home',{
                 templateUrl:'partials/home.html',
                 controller:''
-            }).when('/games',{
+            }).
+            when('/games',{
                 templateUrl:'partials/game.html',
-                controller:''
+                controller: 'gameRunCtrl'
+            }).when('/games/:gamelevel',{
+                templateUrl:'partials/game.html',
+                controller: 'gameRunCtrl'
             }).
             when('/levelMenu',{
                 templateUrl:'partials/levelMenu.html',
-                controller:''
+                controller:'levelMenuCtrl'
             }).
             when('/help',{
                 templateUrl:'partials/help.html',

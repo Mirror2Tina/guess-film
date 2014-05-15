@@ -16,7 +16,8 @@ requirejs.config({
         '$': '../lib/jquery/jquery',
         'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
         'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls',
-        'appGuessFilm':'./app'
+        'appGuessFilm':'./app',
+        'controllers':'./controllers'
 
     },
 

@@ -1,0 +1,10 @@
+<li >
+  	<a href="#/home">主页</a>
+</li>
+<div>
+	<ul>
+		<li ng-repeat="film in films">
+            <a href="#/games/{{film.index*1 + 1}}">第 {{film.index*1 + 1}} 关</a>
+		</li>
+	</ul>
+</div>
