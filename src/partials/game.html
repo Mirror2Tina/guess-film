@@ -15,39 +15,18 @@
 <div id="answer">
 	<div>我的答案</div>
 <ul>
-<li>我</li>
-<li>可</li>
-<li>能</li>
-<li>不</li>
-<li>会</li>
-<li>爱</li>
-<li>你</li>
+<li ng-repeat="word in answers track by $index">
+{{word}}
+</li>
 </ul>
 </div>
 <div id="choice">
 	<div>备选答案</div>
 <ul>
-<li>我</li>
-<li>反</li>
-<li>电</li>
-<li>不</li>
-<li>的</li>
-<li>发</li>
-<li>三</li>
-<li>法</li>
-<li>可</li>
-<li>东</li>
-<li>不</li>
-<li>3</li>
-<li>2</li>
-<li>0</li>
-<li>1</li>
-<li>可</li>
-<li>批</li>
-<li>不</li>
-<li>的</li>
-<li>她</li>
-<li>大</li>
+<li ng-repeat="word in tips track by $index">
+	{{word}}
+</li>
+<image ng-src="{{'images/img/' +currentfilms.picture}}">
 </ul>
 </div>
 

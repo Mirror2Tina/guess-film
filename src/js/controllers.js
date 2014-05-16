@@ -15,13 +15,20 @@ define("controllers", [
 	gameControllers.controller('gameRunCtrl', ['$scope', '$http', '$routeParams',
 		function($scope, $http, $routeParams) {
 			if (!$scope.$parent.films) {
-			  $http.get('datas/films.json').success(function(data) {
-					$scope.$parent.films  = data;
+				$http.get('datas/films.json').success(function(data) {
+					$scope.$parent.films = data;
+					initData();
 				});
+			} else {
+				initData();
 			}
-			$scope.currentLevel = $routeParams.gamelevel || 1;
-			$scope.currentfilms = $scope.$parent.films[$scope.currentLevel];
-console.log($scope.currentfilms.con);
+
+			function initData() {
+				$scope.currentLevel = $routeParams.gamelevel || 1;
+				$scope.currentfilms = $scope.$parent.films[$scope.currentLevel-1];
+				$scope.answers=$scope.currentfilms.answer.split("");
+				$scope.tips=$scope.currentfilms.tip.split("");
+			}
 
 		}
 	]);
