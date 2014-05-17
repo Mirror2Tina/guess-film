@@ -1,32 +1,39 @@
-<div>
+
+
+
+<div style="left: -34.5px; top: -33px;">
 <ul>
   <li>
-  	 <a href="#/home">主页</a>
+  	 <a href="#/home" style="font-size:1.4em">主页</a>
   </li>
   <!-- <li>
   	 <a href="#/games">重新开始</a>
   </li> -->
 </ul>
 </div>
-<h1>第{{currentLevel}}关</h1>
-<div id="dialogue">
-{{currentfilms.con}}
+</div>
+<div style="color:#E7B61F; font-size:1em;width: 85.5px; left: -1.5px; top: -66px; height: 40.49px;">
+第1关
+</div>
+<div id="dialogue" style="font-size:0.7em;left: 0px; top: -58.5px;">
+ {{currentfilms.con}}
 </div>
 <div id="answer">
-	<div>我的答案</div>
-<ul>
+	<div style="left: -1.5px; top: -43.5px;">我的答案</div>
+	<div style="left: 0px; top: -51px; height: 102px;">
+<ul class="inputword">
 <li ng-repeat="word in answers track by $index">
 {{word}}
 </li>
 </ul>
 </div>
-<div id="choice">
+</div>
+<div id="choice" class="ng-scope">
 	<div>备选答案</div>
-<ul>
+<ul class="inputword">
 <li ng-repeat="word in tips track by $index">
 	{{word}}
 </li>
 <image ng-src="{{'images/img/' +currentfilms.picture}}">
 </ul>
 </div>
-
