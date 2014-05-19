@@ -13,7 +13,7 @@ define("appGuessFilm", [
         function  ($routeProvider) {
             $routeProvider.when('/home',{
                 templateUrl:'partials/home.html',
-                controller:''
+                controller:'homeCtrl'
             }).
             when('/games',{
                 templateUrl:'partials/game.html',
@@ -28,6 +28,10 @@ define("appGuessFilm", [
             }).
             when('/help',{
                 templateUrl:'partials/help.html',
+                controller:''
+            }).
+            when('/author',{
+                templateUrl:'partials/author.html',
                 controller:''
             }).
             otherwise({

@@ -1,39 +1,36 @@
-
-
-
 <div style="left: -34.5px; top: -33px;">
-<ul>
-  <li>
-  	 <a href="#/home" style="font-size:1.4em">主页</a>
-  </li>
-  <!-- <li>
-  	 <a href="#/games">重新开始</a>
+    <ul>
+        <li>
+            <a href="#/home" style="font-size:1.4em">主页</a>
+        </li>
+        <!-- <li>
+     <a href="#/games">重新开始</a>
   </li> -->
-</ul>
+    </ul>
 </div>
 </div>
 <div style="color:#E7B61F; font-size:1em;width: 85.5px; left: -1.5px; top: -66px; height: 40.49px;">
-第1关
+    第1关
 </div>
 <div id="dialogue" style="font-size:0.7em;left: 0px; top: -58.5px;">
- {{currentfilms.con}}
+    {{currentfilms.con}}
 </div>
 <div id="answer">
-	<div style="left: -1.5px; top: -43.5px;">我的答案</div>
-	<div style="left: 0px; top: -51px; height: 102px;">
-<ul class="inputword">
-<li ng-repeat="word in answers track by $index">
+    <div style="left: -1.5px; top: -43.5px;">我的答案</div>
+    <div style="left: 0px; top: -51px; height: 102px;">
+        <ul class="inputword">
+            <li ng-model="word" ng-click="removeWord(key)" ng-repeat="(key,word) in choseAnswer track by $index">
 {{word}}
-</li>
-</ul>
-</div>
+            </li>
+        </ul>
+    </div>
 </div>
 <div id="choice" class="ng-scope">
-	<div>备选答案</div>
-<ul class="inputword">
-<li ng-repeat="word in tips track by $index">
-	{{word}}
-</li>
-<image ng-src="{{'images/img/' +currentfilms.picture}}">
-</ul>
+    <div>备选答案</div>
+    <ul class="inputword">
+        <li ng-click="choseWord(word)" ng-repeat="word in tips track by $index">
+            {{word}}
+        </li>
+        <image ng-src="{{'images/img/' +currentfilms.picture}}">
+    </ul>
 </div>
